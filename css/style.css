@@ -8,16 +8,13 @@
 
 /* variabili */
 :root {
-    --ms-primary-color: ;
+    --ms-primary-color: #051e34;
     --ms-primary-light-color: ;
     --ms-secondary-color: ;
 }
 
 /* Regole di debug */
-.debug #sidebar {
-    background-color: orange;
-}
-.debug #content {
+.debug #ms_content {
     background-color: red;
 }
 
@@ -37,17 +34,21 @@ header {
 main {
     width: 100%;
     height: calc(100vh - 70px);
+    overflow-y: scroll;
+    overflow-y: hidden;
 }
 
 /* SIDEBAR */
-#sidebar {
-    width: 80px;
+#ms_sidebar {
+    width: 60px;
     height: calc(100vh - 70px);
+    background-color: var(--ms-primary-color);
+    background-image: url(../img/sidebar-bg.png);
 }
 
 /* CONTENT */
-#content {
-    width: calc(100vw - 80px);
+#ms_content {
+    width: calc(100vw - 60px);
     height: calc(100vh - 70px);
 }
 
@@ -66,11 +67,11 @@ main {
 
 /* Breakpoint lg */
 @media screen and (min-width: 992px) {
-    #sidebar {
-        width: 200px;
+    #ms_sidebar {
+        width: 120px;
     }
-    #content {
-        width: calc(100vw - 200px);
+    #ms_content {
+        width: calc(100vw - 120px);
     }
 }
 
