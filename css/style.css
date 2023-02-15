@@ -14,9 +14,6 @@
 }
 
 /* Regole di debug */
-.debug header {
-    background-color: black;
-}
 .debug #sidebar {
     background-color: orange;
 }
@@ -64,17 +61,17 @@ main {
 
 /* Breakpoint md */
 @media screen and (min-width: 768px) {
+    
+}
+
+/* Breakpoint lg */
+@media screen and (min-width: 992px) {
     #sidebar {
         width: 200px;
     }
     #content {
         width: calc(100vw - 200px);
     }
-}
-
-/* Breakpoint lg */
-@media screen and (min-width: 992px) {
-    
 }
 
 /* Breakpoint xl */
