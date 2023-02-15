@@ -14,9 +14,6 @@
 }
 
 /* Regole di debug */
-.debug #ms_content {
-    background-color: red;
-}
 .debug .box-left {
     background-color: green;
     height: 100px;
@@ -60,7 +57,20 @@ main {
 .ms_content_header {
     background-color: var(--ms-secondary-color);
 }
-
+.ms_class_img {
+    height: 30px;
+    width: 30px;
+    margin-right: 0.5rem;
+}
+.fa-pen, .fa-trash {
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: grey;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
 
 
 /* Media query */
