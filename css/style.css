@@ -48,6 +48,9 @@ main {
     background-color: var(--ms-primary-color);
     background-image: url(../img/sidebar-bg.png);
 }
+#ms_sidebar li:hover {
+    background-color: lightgray;
+}
 
 /* CONTENT */
 #ms_content {
@@ -71,6 +74,11 @@ main {
     line-height: 50px;
     vertical-align: middle;
     border-radius: 10px;
+}
+.ms_btn_form:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
 }
 .ms_pill_bg {
     background-color: rgba(0, 0, 0, 0.4);
