@@ -1,0 +1,24 @@
+/* Style */
+/* CSS reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* variabili */
+:root {
+    --ms-primary-color: ;
+    --ms-primary-light-color: ;
+    --ms-secondary-color: ;
+}
+
+/* Regole di debug */
+
+
+
+/* Regole CSS generali */
+html{
+    font-family: sans-serif;
+}
+
