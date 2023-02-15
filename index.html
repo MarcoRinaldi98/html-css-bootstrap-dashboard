@@ -50,10 +50,27 @@
                         </a>               
                     </li>
 
-                    <li class="nav-item ps-4 ps-lg-0">
-                        <a class="nav-link text-warning">
+                    <li class="nav-item ps-4 ps-lg-0 dropstart">
+                        <a class="nav-link text-warning" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="bi bi-bell-fill"></i>
                         </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Profilo
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Fatturazione
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Logout
+                                </a>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
             </div>
@@ -106,9 +123,77 @@
                         <div class="col-12 col-md-4 order-md-last text-start text-md-center">
                             <div class="py-2">
                                 <span class="ms_lh_50 fs-5 text-white fw-semibold me-3">Nuovo Studente</span>
-                                <a class="ms_btn_form d-inline-block" href="#">
+                                <a class="ms_btn_form d-inline-block" href="#offcanvasExample" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
                                     <i class="bi bi-plus"></i>
                                 </a>
+                                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                                    <div class="offcanvas-header">
+                                      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Inserisci un nuovo studente</h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                        <form class="text-start">
+                                            <div class="">
+                                                <label for="nome" class="form-label">Nome</label>
+                                                <input type="text" class="form-control" name="nome" id="nome" placeholder="" required>
+
+                                                <label for="cognome" class="form-label">Cognome</label>
+                                                <input type="text" class="form-control" name="cognome" id="cognome" placeholder="" required>
+                                            </div>
+                                
+                                            <div class="">
+                                                <label for="email" class="form-label">Email</label>
+                                                <input type="email" class="form-control" name="email" id="email" placeholder="" required>
+
+                                                <label for="password" class="form-label">Password</label>
+                                                <input type="password" class="form-control" name="password" id="password" placeholder="" required>
+                                            </div>
+
+                                            <div class="">
+                                                <label for="email" class="form-label">Indirizzo Email</label>
+                                                <input type="email" class="form-control" name="email" id="email" placeholder="" required>
+
+                                                <label for="password" class="form-label">Password</label>
+                                                <input type="password" class="form-control" name="password" id="password" placeholder="" required>
+                                            </div>
+                                
+                                            <div class="">
+                                                <label for="indirizzo" class="form-label">Indirizzo</label>
+                                                <input type="text" class="form-control" name="indirizzo" id="indirizzo" placeholder="" required>
+                                            </div>
+                                
+                                            <div class="">
+                                                <label for="citta" class="form-label">Città</label>
+                                                <input type="text" class="form-control" name="citta" id="citta" placeholder="" required>
+
+                                                <label for="stato">Stato</label>
+                                                <select name="stato" id="stato" placeholder="Scegli...">
+                                                    <option value="volvo">Uno</option>
+                                                    <option value="saab">Due</option>
+                                                    <option value="opel">Tre</option>
+                                                </select>
+
+                                                <label for="cap" class="form-label">CAP</label>
+                                                <input type="text" class="form-control" name="cap" id="cap" placeholder="" required>
+                                            </div>
+                                            
+                                            <div class="">
+                                                <label for="file">Foto</label>
+                                                <input type="file" id="file" name="file">
+                                            </div>
+
+                                            <div class="">
+                                                <input type="checkbox" id="confirm" name="confirm" required>
+                                                <label for="confirm">Seleziona per proseguire</label>
+                                            </div>
+
+                                            <div class="">
+                                                <input type="submit" class="btn btn-large" value="Salva">
+                                                <input type="reset" class="btn btn-large" value="Svuota">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="col-12 col-md-4 text-start">
@@ -386,7 +471,7 @@
                                         </button>
                                       </h2>
                                       <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                                        <div class="accordion-body">Clicca sul + in alto nella sezione blu.</div>
                                       </div>
                                     </div>
                                     <div class="accordion-item">
@@ -396,7 +481,7 @@
                                         </button>
                                       </h2>
                                       <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                                        <div class="accordion-body">Clicca sull'icona della campanella.</div>
                                       </div>
                                     </div>
                                     <div class="accordion-item">
