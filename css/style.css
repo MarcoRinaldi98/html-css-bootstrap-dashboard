@@ -10,12 +10,20 @@
 :root {
     --ms-primary-color: #051e34;
     --ms-primary-light-color: ;
-    --ms-secondary-color: ;
+    --ms-secondary-color: #1b72e8;
 }
 
 /* Regole di debug */
 .debug #ms_content {
     background-color: red;
+}
+.debug .box-left {
+    background-color: green;
+    height: 100px;
+}
+.debug .box-right {
+    background-color: blue;
+    height: 100px;
 }
 
 
@@ -34,8 +42,6 @@ header {
 main {
     width: 100%;
     height: calc(100vh - 70px);
-    overflow-y: scroll;
-    overflow-y: hidden;
 }
 
 /* SIDEBAR */
@@ -50,6 +56,9 @@ main {
 #ms_content {
     width: calc(100vw - 60px);
     height: calc(100vh - 70px);
+}
+.ms_content_header {
+    background-color: var(--ms-secondary-color);
 }
 
 
