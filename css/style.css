@@ -57,6 +57,25 @@ main {
 .ms_content_header {
     background-color: var(--ms-secondary-color);
 }
+.ms_lh_50 {
+    line-height: 50px;
+    vertical-align: middle;
+}
+.ms_btn_form {
+    height: 50px;
+    width: 50px;
+    border: 1px solid white;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    line-height: 50px;
+    vertical-align: middle;
+    border-radius: 10px;
+}
+.ms_pill_bg {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+}
 .ms_class_img {
     height: 30px;
     width: 30px;
