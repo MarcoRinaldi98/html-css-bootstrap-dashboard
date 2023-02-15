@@ -14,7 +14,15 @@
 }
 
 /* Regole di debug */
-
+.debug header {
+    background-color: black;
+}
+.debug #sidebar {
+    background-color: orange;
+}
+.debug #content {
+    background-color: red;
+}
 
 
 /* Regole CSS generali */
@@ -22,3 +30,59 @@ html{
     font-family: sans-serif;
 }
 
+/* HEADER */
+header {
+    width: 100%;
+    height: 70px;
+}
+
+/* MAIN */
+main {
+    width: 100%;
+    height: calc(100vh - 70px);
+}
+
+/* SIDEBAR */
+#sidebar {
+    width: 80px;
+    height: calc(100vh - 70px);
+}
+
+/* CONTENT */
+#content {
+    width: calc(100vw - 80px);
+    height: calc(100vh - 70px);
+}
+
+
+
+/* Media query */
+/* Breakpoint sm */
+@media screen and (min-width: 576px) {
+    
+}
+
+/* Breakpoint md */
+@media screen and (min-width: 768px) {
+    #sidebar {
+        width: 200px;
+    }
+    #content {
+        width: calc(100vw - 200px);
+    }
+}
+
+/* Breakpoint lg */
+@media screen and (min-width: 992px) {
+    
+}
+
+/* Breakpoint xl */
+@media screen and (min-width: 1200px) {
+    
+}
+
+/* Breakpoint xxl */
+@media screen and (min-width: 1400px) {
+    
+}
