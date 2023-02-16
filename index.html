@@ -24,11 +24,13 @@
             <div class="container-fluid h-100">
                 
                 <a class="navbar-brand" href="#">
-                    IMG
-                </a>                   
+                    <img class="d-lg-none" src="img/mobile-logo.png" alt="">
+                    <img class="d-none d-lg-block" src="img/logo.svg" alt="">
+                </a>               
 
-                <form class="flex-grow-1" role="search">
-                    <input class="form-control me-2 bg-body-secondary" type="search" placeholder="&#128269; Prova a cercare: Lezioni di Laravel">
+                <form class="flex-grow-1 input-group" role="search">
+                    <span class="input-group-text bg-body-secondary border-end-0" id="basic-addon1"><i class="bi bi-search"></i></span>
+                    <input class="form-control me-2 bg-body-secondary border-start-0" type="search" placeholder="Prova a cercare: Lezioni di Laravel">
                 </form>
                 
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -133,63 +135,80 @@
                                     </div>
                                     <div class="offcanvas-body">
                                         <form class="text-start">
-                                            <div class="">
-                                                <label for="nome" class="form-label">Nome</label>
-                                                <input type="text" class="form-control" name="nome" id="nome" placeholder="" required>
-
-                                                <label for="cognome" class="form-label">Cognome</label>
-                                                <input type="text" class="form-control" name="cognome" id="cognome" placeholder="" required>
-                                            </div>
-                                
-                                            <div class="">
-                                                <label for="email" class="form-label">Email</label>
-                                                <input type="email" class="form-control" name="email" id="email" placeholder="" required>
-
-                                                <label for="password" class="form-label">Password</label>
-                                                <input type="password" class="form-control" name="password" id="password" placeholder="" required>
-                                            </div>
-
-                                            <div class="">
-                                                <label for="email" class="form-label">Indirizzo Email</label>
-                                                <input type="email" class="form-control" name="email" id="email" placeholder="" required>
-
-                                                <label for="password" class="form-label">Password</label>
-                                                <input type="password" class="form-control" name="password" id="password" placeholder="" required>
-                                            </div>
-                                
-                                            <div class="">
-                                                <label for="indirizzo" class="form-label">Indirizzo</label>
-                                                <input type="text" class="form-control" name="indirizzo" id="indirizzo" placeholder="" required>
-                                            </div>
-                                
-                                            <div class="">
-                                                <label for="citta" class="form-label">Città</label>
-                                                <input type="text" class="form-control" name="citta" id="citta" placeholder="" required>
-
-                                                <label for="stato">Stato</label>
-                                                <select name="stato" id="stato" placeholder="Scegli...">
-                                                    <option value="volvo">Uno</option>
-                                                    <option value="saab">Due</option>
-                                                    <option value="opel">Tre</option>
-                                                </select>
-
-                                                <label for="cap" class="form-label">CAP</label>
-                                                <input type="text" class="form-control" name="cap" id="cap" placeholder="" required>
-                                            </div>
-                                            
-                                            <div class="">
-                                                <label for="file">Foto</label>
-                                                <input type="file" id="file" name="file">
-                                            </div>
-
-                                            <div class="">
-                                                <input type="checkbox" id="confirm" name="confirm" required>
-                                                <label for="confirm">Seleziona per proseguire</label>
-                                            </div>
-
-                                            <div class="">
-                                                <input type="submit" class="btn btn-large" value="Salva">
-                                                <input type="reset" class="btn btn-large" value="Svuota">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <label for="nome" class="form-label">Nome</label>
+                                                        <input type="text" class="form-control" name="nome" id="nome" placeholder="" required>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <label for="cognome" class="form-label">Cognome</label>
+                                                        <input type="text" class="form-control" name="cognome" id="cognome" placeholder="" required>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <label for="email" class="form-label">Email</label>
+                                                        <input type="email" class="form-control" name="email" id="email" placeholder="" required>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <label for="password" class="form-label">Password</label>
+                                                        <input type="password" class="form-control" name="password" id="password" placeholder="" required>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <label for="email" class="form-label">Indirizzo Email</label>
+                                                        <input type="email" class="form-control" name="email" id="email" placeholder="" required>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <label for="password" class="form-label">Password</label>
+                                                        <input type="password" class="form-control" name="password" id="password" placeholder="" required>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <label for="indirizzo" class="form-label">Indirizzo</label>
+                                                        <input type="text" class="form-control" name="indirizzo" id="indirizzo" placeholder="" required>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-5">
+                                                        <label for="citta" class="form-label">Città</label>
+                                                        <input type="text" class="form-control" name="citta" id="citta" placeholder="" required>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <label class="form-label" for="stato">Stato</label>
+                                                        <select class="form-control" name="stato" id="stato" placeholder="Scegli...">
+                                                            <option value="volvo">Scegli...</option>
+                                                            <option value="volvo">Uno</option>
+                                                            <option value="saab">Due</option>
+                                                            <option value="opel">Tre</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <label for="cap" class="form-label">CAP</label>
+                                                        <input type="text" class="form-control" name="cap" id="cap" placeholder="" required>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <label for="file" class="form-label">Foto</label>
+                                                        <input class="form-control form-control-sm" id="file" type="file">
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12 py-3">
+                                                        <input type="checkbox" id="confirm" name="confirm" required>
+                                                        <label for="confirm">Seleziona per proseguire</label>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <input type="submit" class="btn btn-primary" value="Salva">
+                                                        <input type="reset" class="btn btn-warning" value="Svuota">
+                                                    </div>
+                                                </div>
                                             </div>
                                         </form>
                                     </div>
@@ -235,7 +254,7 @@
                                     <table class="table text-center">
                                         <thead>
                                           <tr>
-                                            <th class="text-secondary fw-medium text-start" colspan="2" scope="col">
+                                            <th class="text-secondary fw-medium" scope="col">
                                                 Nome
                                             </th>
                                             <th class="text-secondary fw-medium" scope="col">
@@ -254,7 +273,7 @@
                                         </thead>
                                         <tbody>
                                           <tr>
-                                            <td class="text-start" colspan="2">
+                                            <td class="text-start">
                                                 <img class="ms_class_img" src="img/class-avatar.jpg" alt="Immagine avatar classe">
                                                 Classe 75
                                             </td>
@@ -279,7 +298,7 @@
                                             </td>
                                           </tr>
                                           <tr>
-                                            <td class="text-start" colspan="2">
+                                            <td class="text-start">
                                                 <img class="ms_class_img" src="img/class-avatar.jpg" alt="Immagine avatar classe">
                                                 Classe 76
                                             </td>
@@ -304,7 +323,7 @@
                                             </td>
                                           </tr>
                                           <tr>
-                                            <td class="text-start" colspan="2">
+                                            <td class="text-start">
                                                 <img class="ms_class_img" src="img/class-avatar.jpg" alt="Immagine avatar classe">
                                                 Classe 77
                                             </td>
@@ -329,7 +348,7 @@
                                             </td>
                                           </tr>
                                           <tr>
-                                            <td class="text-start" colspan="2">
+                                            <td class="text-start">
                                                 <img class="ms_class_img" src="img/class-avatar.jpg" alt="Immagine avatar classe">
                                                 Classe 78
                                             </td>
@@ -354,7 +373,7 @@
                                             </td>
                                           </tr>
                                           <tr>
-                                            <td class="text-start" colspan="2">
+                                            <td class="text-start">
                                                 <img class="ms_class_img" src="img/class-avatar.jpg" alt="Immagine avatar classe">
                                                 Classe 79
                                             </td>
@@ -379,7 +398,7 @@
                                             </td>
                                           </tr>
                                           <tr>
-                                            <td class="text-start" colspan="2">
+                                            <td class="text-start">
                                                 <img class="ms_class_img" src="img/class-avatar.jpg" alt="Immagine avatar classe">
                                                 Classe 80
                                             </td>
@@ -404,7 +423,7 @@
                                             </td>
                                           </tr>
                                           <tr>
-                                            <td class="text-start" colspan="2">
+                                            <td class="text-start">
                                                 <img class="ms_class_img" src="img/class-avatar.jpg" alt="Immagine avatar classe">
                                                 Classe 81
                                             </td>
@@ -429,7 +448,7 @@
                                             </td>
                                           </tr>
                                           <tr>
-                                            <td class="text-start" colspan="2">
+                                            <td class="text-start">
                                                 <img class="ms_class_img" src="img/class-avatar.jpg" alt="Immagine avatar classe">
                                                 Classe 82
                                             </td>

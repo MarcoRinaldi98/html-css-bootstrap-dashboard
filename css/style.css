@@ -27,6 +27,8 @@
 /* Regole CSS generali */
 html{
     font-family: sans-serif;
+    min-width: 390px;
+    min-height: 480px;
 }
 
 /* HEADER */
@@ -88,6 +90,7 @@ main {
     height: 30px;
     width: 30px;
     margin-right: 0.5rem;
+    border-radius: 50%;
 }
 .fa-pen, .fa-trash {
     height: 30px;
@@ -97,6 +100,11 @@ main {
     color: grey;
     border: 1px solid grey;
     border-radius: 5px;
+}
+.fa-pen:hover, .fa-trash:hover {
+    color: white;
+    border: 2px solid white;
+    background-color: grey;
 }
 
 
