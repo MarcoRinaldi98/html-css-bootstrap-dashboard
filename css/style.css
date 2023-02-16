@@ -13,22 +13,18 @@
     --ms-secondary-color: #1b72e8;
 }
 
-/* Regole di debug */
-.debug .box-left {
-    background-color: green;
-    height: 100px;
-}
-.debug .box-right {
-    background-color: blue;
-    height: 100px;
-}
-
 
 /* Regole CSS generali */
 html{
     font-family: sans-serif;
     min-width: 390px;
     min-height: 480px;
+}
+.ms_w_100 {
+    width: 100px;
+}
+.ms_w_120 {
+    width: 120px;
 }
 
 /* HEADER */
@@ -106,6 +102,9 @@ main {
     border: 2px solid white;
     background-color: grey;
 }
+#offcanvasExample {
+    width: 100%;
+}
 
 
 /* Media query */
@@ -116,7 +115,9 @@ main {
 
 /* Breakpoint md */
 @media screen and (min-width: 768px) {
-    
+    #offcanvasExample {
+        width: 50%;
+    }
 }
 
 /* Breakpoint lg */
@@ -137,4 +138,11 @@ main {
 /* Breakpoint xxl */
 @media screen and (min-width: 1400px) {
     
+}
+
+/* Breakpoint xxl */
+@media screen and (min-width: 992px) and (max-width: 1160px) {
+    .ms_w_100 {
+        width: 50px;
+    } 
 }
